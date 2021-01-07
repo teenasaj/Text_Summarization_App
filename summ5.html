@@ -1,0 +1,38 @@
+<!--extending base for app2-->
+<!--website summarizer like summ3 of rawtext summarizer -->
+{% extends 'base.html' %}
+
+  {% block head %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Summaryzer</title>
+{% endblock %}
+
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+{% block body %} 
+<body>
+  <br>
+  <h3>Summarised Website Content is: </h3>
+
+  <br>
+  <br>
+	{{processed_textweb}}
+  <!-- End -->
+
+
+</body>
+{% endblock %}
+</html>
+
+
+
+

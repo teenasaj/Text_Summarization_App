@@ -1,0 +1,47 @@
+<!--HOMEPAGE-->
+{% extends 'base.html' %}
+
+	{% block head %} 
+
+<title>Home</title>
+{% endblock %}
+
+{% block body %} 
+<main role="main">
+    <div class="jumbotron">
+      <div class="col-sm-8 mx-auto">
+        <h1>Welcome to the Nutshell App</h1>
+
+        <strong> Too lazy to read a long text? You are at the right place. </strong>
+        <p> Long texts can sometimes be boring and time-consuming. That's how we came up with the idea of Summarisation. Our concept is not to make you lazy, but if you find the summary to be interesting, you can spend time reading the document. 
+        </p>
+
+    	<p> Here we give you various options to summarise the text that you give.</p>
+       
+        <p>
+         	<a class="btn btn-primary" href="/summ" role="button">Raw Text Summariser &raquo;</a> 
+      	</p>
+      	
+      	<p>
+			<a class="btn btn-primary" href="/summtextfile" role="button">Text File Summariser &raquo;</a>
+	    </p>
+	    
+	    <p>
+            <a class="btn btn-primary" href="/summaweb" role="button">Website Summariser &raquo;</a>
+      	</p>
+      
+      	<p>
+             <a class="btn btn-primary" href="/summanews" role="button">Newspaper Artilce Summariser &raquo;</a>
+        </p>
+
+      </div>
+    </div>
+</main>
+{% endblock %}
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<!--extending base for app2-->
+<!--website summarizer like summ2 of rawtext summarizer -->
+{% extends 'base.html' %}
+
+  {% block head %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Summaryzer</title>
+{% endblock %}
+
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+{% block body %} 
+<body>
+  <br>
+  <h3>Enter the Website Link that you want to summarize.</h3>
+	<div class="container">
+    <div class="section">
+       
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="input-field col s12 m10">
+          <div class="icon-block">
+            <br>
+           <form method="POST" action="/summaweb">
+         <textarea name="u" cols="2" rows="1" class="form-control" required="true" placeholder="Enter Link Here" ></textarea>
+          
+         <br>
+         <button class="btn btn-success" type="reset">Clear</button>
+          <button class="btn btn-warning" type="submit">Summarize</button>
+          
+        </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- End -->
+
+</body>
+{% endblock %}
+</html>
+
+
+
+
